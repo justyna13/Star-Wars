@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react()],
-    base: '/',
+    base: env.VITE_APP_BASE_URL || '/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, './src')
